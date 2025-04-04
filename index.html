@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOIKA</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 滚动进度指示器 -->
+    <div class="scroll-progress"></div>
+    
+    <!-- 页面加载动画 -->
+    <div class="page-loader">
+        <div class="loader-planet"></div>
+        <div class="loader-text">正在加载星际旅程...</div>
+    </div>
+    
+    <!-- 将月亮移到这里 -->
+    <div class="moon-effect"></div> 
+    
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">首页</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#portfolio">作品集</a></li>
+            <li><a href="#blog">分享</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+    </nav>
+
+    <!-- 背景容器 -->
+    <div class="background-container" id="backgroundContainer">
+        <div class="planet-system">
+            <div class="planet-rings"></div>
+            <div class="planet planet-main"></div>
+            <div class="planet planet-orbit">
+                <div class="moon"></div>
+            </div>
+            <div class="satellite"></div>
+        </div>
+        <!-- <div class="moon-effect"></div> -->
+    </div>
+
+    <!-- 英雄区 -->
+    <section id="home" class="hero parallax-section" data-speed="0.2">
+        <h1>MOIKA</h1>
+        <p>将想法转化为数字体验的探索者</p>
+        <a href="#portfolio" class="btn glow-on-hover">查看我的作品</a>
+    </section>
+
+       <!-- 关于我 -->
+       <section id="about" class="parallax-section" data-speed="0.15">
+        <h2>关于我</h2>
+        <p>YLT，华中科技大学（HUST）本科在读。在星际旅行的过程中，我不断探索数字宇宙的无限可能。</p>
+        
+        <div class="timeline">
+            <div class="timeline-item glow-on-hover">
+                <span>2023年</span>
+                <p>开始学习HTML和CSS，踏上了编程的星际之旅</p>
+            </div>
+            <div class="timeline-item glow-on-hover">
+                <span>2024年</span>
+                <p>跟随老师和学长改进项目，打造了一个独特的数字星球</p>
+            </div>
+            <div class="timeline-item glow-on-hover">
+                <span>2025年</span>
+                <p>拓展视野，接触算法和机器学习，开始在数字宇宙中创造新的维度</p>
+            </div>
+        </div>
+        
+        <div class="skills-container glow-on-hover">
+            <h3>我的技能</h3>
+            <div class="skill">
+                <span class="skill-name">HTML/CSS</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="90%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="85%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">React</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="65%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">C/C++</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="60%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="70%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">midi</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="40%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="portfolio" class="parallax-section" data-speed="0.1">
+        <h2>作品集</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item flip-card glow-on-hover">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./assets/project1.jpg" alt="个人博客设计">
+                        <h3>前后端设计</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>前后端设计</h3>
+                        <p>使用HTML、CSS和JavaScript构建。灵感来自于星际旅行中的奇妙景观。</p>
+                        <a href="#" class="btn-small">查看详情(待更新)</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-item flip-card glow-on-hover">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./assets/project2.jpg" alt="生成艺术实验">
+                        <h3>模型设计</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>模型设计</h3>
+                        <p>基于python的学习模型作品，模拟了宇宙中星云的形成与演变过程。</p>
+                        <a href="#" class="btn-small">查看详情(待更新)</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-item flip-card glow-on-hover">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./assets/project3.jpg" alt="星际旅行应用">
+                        <h3>生成艺术实验</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>生成艺术实验</h3>
+                        <p>重在激发生活的兴趣点，探索不同的星系和行星。</p>
+                        <a href="#" class="btn-small">查看详情(待更新)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分享 -->
+    <section id="blog" class="parallax-section" data-speed="0.12">
+        <h2>分享（埋坑）</h2>
+        <div class="blog-posts">
+            <article class="glow-on-hover">
+                <h3>我的技术入门之旅</h3>
+                <p>分享我如何从零开始学习编程的心得，以及在数字宇宙中探索的第一步。</p>
+                <span>更新日期：2025年4月</span>
+                <a href="#">阅读更多(待更新)</a>
+            </article>
+            <article class="glow-on-hover">
+                <h3>实践项目经验</h3>
+                <p>探索算法艺术的创造过程，以及如何利用代码创造出美丽的宇宙景观。</p>
+                <span>更新日期：2025年4月</span>
+                <a href="#">阅读更多(待更新)</a>
+            </article>
+            <article class="glow-on-hover">
+                <h3>生成艺术初探</h3>
+                <p>探讨技术之外生活的乐趣，包括电影、音乐、游戏······</p>
+                <span>更新日期：2025年4月</span>
+                <a href="#">阅读更多(待更新)</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- 联系我 -->
+    <section id="contact" class="parallax-section" data-speed="0.08">
+        <h2>联系我</h2>
+        <p>无论你是来自哪个星系，都欢迎与我联系，一起探讨数字宇宙的无限可能。</p>
+        <p>邮箱: <a href="mailto:Electronic_Wolf@outlook.com">Electronic_Wolf@outlook.com</a></p>
+        <p>社交媒体: <a href="https://x.com/YmoikaY">X</a> | <a href="https://github.com/hustargit">GitHub</a></p>
+        
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="姓名" required>
+            <input type="email" name="email" placeholder="邮箱" required>
+            <textarea name="message" placeholder="消息" required></textarea>
+            <button type="submit" class="btn glow-on-hover">发送</button>
+        </form>
+    </section>
+
+    <!-- 回到顶部按钮 -->
+    <div class="floating-btn" id="backToTop">
+        <i class="arrow-up"></i>
+    </div>
+
+    <!-- 自定义鼠标效果 -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <script src="script.js"></script>
+
+    <!-- <script src="fix-loader.js"></script> -->
+</body>
+</html>
+
